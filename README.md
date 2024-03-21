@@ -54,11 +54,14 @@ Developed by:Prideesh M RegisterNumber:212223040154
 
 
 **RTL realization**
-**RTL**
+
 ![Screenshot 2024-03-21 102113](https://github.com/prideeshm/BOOLEAN_FUNCTION_MINIMIZATION/assets/144870483/26927343-2d06-47e8-ab86-e1a3df97ccf8)
 
+
 **truth table**
+
 ![ex02 truth table](https://github.com/prideeshm/BOOLEAN_FUNCTION_MINIMIZATION/assets/144870483/945b8acc-3e73-46f0-bf91-bc90ce3c3ddc)
+
 
 **Timing Diagram**
 ![Screenshot 2024-03-21 080417](https://github.com/prideeshm/BOOLEAN_FUNCTION_MINIMIZATION/assets/144870483/ae0c3ab8-aa65-4683-9d29-0e2c9da8267a)
