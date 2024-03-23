@@ -37,17 +37,24 @@ Hardware – PCs, Cyclone II , USB flasher
 
 /* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 ```
-module ex02(A,B,C,D,F1);
-input A,B,C,D;
-output F1;
-wire x1,x2,x3,x4,x5;
-assign x1=(~A)&(~B)&(~C)&(~D);
-assign x2=(A)&(~C)&(~D);
-assign x3=(~B)&(C)&(~D);
-assign x4=(~A)&(B)&(C)&(D);
-assign x5=(B)&(~C)&(D);
+module Boolean_min(a,b,c,d,w,x,y,z,f1,f2);
+input a,b,c,d,w,x,y,z;
+output f1,f2;
+wire adash,bdash,cdash,ddash,ydash,p,q,r,s,t,u;
+not(adash,a);
+not(bdash,b);
+not(cdash,c);
+not(ddash,d);
+not(ydash,y);
+and(p,bdash,ddash);
+and(q,adash,b,d);
+and(r,a,b,cdash);
+or(f1,p,q,r);
 
-assign F1=x1|x2|x3|x4|x5;
+and g1(s,ydash,z);
+and g2(t,x,y);
+and g3(u,w,z);
+or g4(f2,s,t,u);
 endmodule
 ```
 Developed by:Prideesh M RegisterNumber:212223040154
@@ -55,17 +62,18 @@ Developed by:Prideesh M RegisterNumber:212223040154
 
 ## RTL realization
 
-![Screenshot 2024-03-21 102113](https://github.com/prideeshm/BOOLEAN_FUNCTION_MINIMIZATION/assets/144870483/26927343-2d06-47e8-ab86-e1a3df97ccf8)
+![Screenshot 2024-03-23 200335](https://github.com/prideeshm/BOOLEAN_FUNCTION_MINIMIZATION/assets/144870483/f352081d-c087-4f9e-bfbc-1f9953f905cf)
+
 
 
 ## truth table
 
-![ex02 truth table](https://github.com/prideeshm/BOOLEAN_FUNCTION_MINIMIZATION/assets/144870483/945b8acc-3e73-46f0-bf91-bc90ce3c3ddc)
+![ex02 truth table](https://github.com/prideeshm/BOOLEAN_FUNCTION_MINIMIZATION/assets/144870483/9b8ac838-42f6-4e16-af60-36b3d664d4db)
+
 
 
 ## Timing Diagram
-![Screenshot 2024-03-21 080417](https://github.com/prideeshm/BOOLEAN_FUNCTION_MINIMIZATION/assets/144870483/0ca32278-a62b-430e-86ac-bcccdd93d080)
-
+![Screenshot 2024-03-23 200808](https://github.com/prideeshm/BOOLEAN_FUNCTION_MINIMIZATION/assets/144870483/b497fc93-c6c6-4981-8462-91a226b19e88)
 
 ## Result:
 
