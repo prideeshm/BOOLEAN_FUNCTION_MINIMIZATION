@@ -73,7 +73,8 @@ Developed by:Prideesh M RegisterNumber:212223040154
 
 
 ## Timing Diagram
-![Screenshot 2024-03-23 200808](https://github.com/prideeshm/BOOLEAN_FUNCTION_MINIMIZATION/assets/144870483/b497fc93-c6c6-4981-8462-91a226b19e88)
+![Screenshot 2024-04-05 144731](https://github.com/prideeshm/BOOLEAN_FUNCTION_MINIMIZATION/assets/144870483/b09b3c71-f010-4f7b-b776-a0998ac476cd)
+
 
 ## Result:
 
